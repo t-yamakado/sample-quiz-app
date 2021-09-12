@@ -1,6 +1,6 @@
 # Overview
 
-React Native + expo でお試しクイズアプリを作ってみるレポジトリだよ！
+React Native + expo でお試しクイズアプリを作ってみるレポジトリだよ！！！
 
 # How to start
 
