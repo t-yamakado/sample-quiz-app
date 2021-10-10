@@ -9,6 +9,7 @@ export default function App() {
 			<Text>Open up App.tsx to start working on your app!</Text>
 			<StatusBar style="auto" />
 			<Button
+				/* 利用可能アイコンは、https://callstack.github.io/react-native-paper/icons.html -> See the list of supported icons */
 				icon="arrow-right-circle-outline"
 				mode="contained"
 				onPress={() => console.log("Pressed")}
