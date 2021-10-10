@@ -12,6 +12,9 @@ export default function App() {
 				icon="arrow-right-circle-outline"
 				mode="contained"
 				onPress={() => console.log("Pressed")}
+				style={{ width: "50%" }}
+				/* https://reactnative.dev/docs/text-style-props */
+				labelStyle={{ fontSize: 30 }}
 			>
 				始める
 			</Button>
