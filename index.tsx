@@ -1,6 +1,6 @@
 import { registerRootComponent } from "expo";
 import * as React from "react";
-import App from "./src/App";
+import App from "./src/screens/App";
 import { Provider as PaperProvider } from "react-native-paper";
 
 export default function Main() {
