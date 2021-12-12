@@ -16,10 +16,15 @@ export default function Main() {
 		<PaperProvider>
 			<NavigationContainer>
 				<Stack.Navigator>
-					<Stack.Screen name="App" component={App}></Stack.Screen>
+					<Stack.Screen
+						name="App"
+						component={App}
+						options={{ headerShown: false }}
+					></Stack.Screen>
 					<Stack.Screen
 						name="Question"
 						component={Question}
+						options={{ headerShown: false }}
 					></Stack.Screen>
 				</Stack.Navigator>
 			</NavigationContainer>
