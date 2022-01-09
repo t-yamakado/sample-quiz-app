@@ -1,17 +1,22 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { RootStackParamList } from "../constants/common";
 
 export default function Inorrect() {
+	const navigation =
+		useNavigation<
+			NativeStackNavigationProp<RootStackParamList, "Question">
+		>();
 	return (
 		<View style={styles.container}>
-			<Text style={styles.incorrectText}>
-				残念(TT)
-			</Text>
+			<Text style={styles.incorrectText}>残念(TT)</Text>
 			<View style={styles.buttonContainer}>
 				<Text
 					style={styles.baseText}
-					onPress={() => console.log("cannot get back to top yet :(")}
+					onPress={() => navigation.navigate("App")}
 				>
 					TOPへ戻る
 				</Text>
