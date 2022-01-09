@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View, Image } from "react-native";
 import { Button } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
@@ -13,7 +13,10 @@ export default function App() {
 		>();
 	return (
 		<View style={styles.container}>
-			<Text>Open up App.tsx to start working on your app!</Text>
+			<Image
+				source={require("../assets/quiz.png")}
+				style={styles.image}
+			/>
 			<StatusBar style="auto" />
 			<Button
 				/* 利用可能アイコンは、https://callstack.github.io/react-native-paper/icons.html -> See the list of supported icons */
@@ -36,5 +39,10 @@ const styles = StyleSheet.create({
 		backgroundColor: "#fff",
 		alignItems: "center",
 		justifyContent: "center",
+	},
+	image: {
+		height: 400,
+		resizeMode: "contain",
+		marginTop: "-30%",
 	},
 });
