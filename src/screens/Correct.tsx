@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
 		fontSize: 100,
 		fontWeight: "bold",
 		color: "#dc143c",
+		textAlign: "center",
 	},
 	baseText: {
 		fontSize: 20,
