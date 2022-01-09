@@ -45,10 +45,4 @@ const styles = StyleSheet.create({
 		resizeMode: "contain",
 		marginTop: "-30%",
 	},
-	baseText: {
-		fontSize: 70,
-		color: "#274a78",
-		marginBottom: 30,
-		textAlign: "center",
-	},
 });
